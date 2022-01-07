@@ -1,0 +1,31 @@
+<!--
+<ul>
+    <li *ngFor="let g of results">{{g.title}}</li>
+</ul>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-2 animate__animated animate__fadeIn animate__faster" *ngFor="let g of results">
+    
+            <div class="card">
+                <div class="card-body">
+                    <img [src]="g.images.downsized_medium.url" [alt]="g.title" class="card-img-top">
+                    <p class="card-text">{{ g.title }}</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>
+-->
+<div class="d-flex flex-wrap justify-content-around">
+
+        <div *ngFor="let g of results" class="card mb-2" style="width: 100%;  max-width: 270px;">
+            <div class="card-body">
+                <img [src]="g.images.downsized_medium.url" [alt]="g.title" class="card-img-top">
+                <p class="card-text">{{ g.title }}</p>
+            </div>
+        </div>
+
+    
+</div>
